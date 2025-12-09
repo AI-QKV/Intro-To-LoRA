@@ -19,8 +19,9 @@
 
 
 ## 目录
-*这里写你的项目目录，已完成的部分用添加上跳转链接*
-- [第1章](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter1/chapter1.md)
+
+- [LoRA(一)LoRA的原理](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter1/chapter1.md)
+- 
 - [第2章](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter2)
   - [2.1 我是2.1的标题](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter2/chapter2_1.md)
   - [2.2 我是2.2的标题](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter2/chapter2_2.md)
