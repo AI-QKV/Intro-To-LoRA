@@ -17,7 +17,6 @@ LoRA原理
 
 LoRA公式
 
-'w = w \+ a/r \(AB\)
 $$W' = W + \frac{\alpha}{r} (AB)$$
 
 说明：
