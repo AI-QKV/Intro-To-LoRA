@@ -22,7 +22,8 @@
 
 - [LoRA(一)LoRA的原理](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter1/chapter1.md)
 - 
-- [第2章](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter2/chapter2.md)
+- [LoRA(二)LoRA的本质](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter2/chapter2.md)
+- 
 - [第3章](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3)
   - [3.1 我是3.1的标题](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3/chapter3_1)
     - [3.1.1 我是3.1.1的标题](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3/chapter3_1/chapter3_1_1.md)
@@ -36,7 +37,7 @@
 
 | 姓名 | 职责 | 简介 |
 | :----| :---- | :---- |
-| 小明 | 项目负责人 | 一个理想主义者 |
+| 小韩 | 项目负责人 | 开源爱好者 |
 | 小红 | 第1章贡献者 | 小明的朋友 |
 | 小强 | 第2章贡献者 | 小明的朋友 |
 
