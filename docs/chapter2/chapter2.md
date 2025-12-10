@@ -1,5 +1,5 @@
 # LoRA深入浅出(二) 
-#### 作者：殷韩（前快手高级工程师，前58高级工程师，现Datawhale社区成员）
+###### 作者：殷韩（前快手高级工程师，前58高级工程师，现Datawhale社区成员）
 
 
 
@@ -50,41 +50,46 @@ LoRA线性层
 my_lora = LoRALinear(original, rank=4)
 
 
+
+
 具体代码
-class LoRALinear(nn.Module):
-    def __init__(self, original_linear_layer, r=4, lora_alpha=8):
-        super().__init__()
-        核心：引用并冻结原始线性层
-        self.original_linear = original_linear_layer
-        
-	      冻结原始层的所有参数，不让它们参与训练
-        for param in self.original_linear.parameters():
-            param.requires_grad = False
+code:
+	
+	class LoRALinear(nn.Module):
 
-          开辟LoRA自己的小矩阵
-        in_features = original_linear_layer.in_features
-        out_features = original_linear_layer.out_features
-
-        self.lora_A = nn.Parameter(torch.zeros(r, in_features))    通常初始化为零
-        self.lora_B = nn.Parameter(torch.zeros(out_features, r))     通常初始化为零
-        self.scaling = lora_alpha / r    缩放因子，用于控制更新量的大小
-
-    def forward(self, x):
-          主路径：使用原始线性层进行计算
-        original_output = self.original_linear(x)
-
-          旁路路径：使用LoRA矩阵进行计算 (x -> A -> B)
-        lora_output = (x @ self.lora_A.T @ self.lora_B.T) * self.scaling
-
-          将两条路径的结果合并
-        return original_output + lora_output
-
-    def enable_lora(self):
-        """激活LoRA矩阵的训练状态"""
-        self.lora_A.requires_grad = True
-        self.lora_B.requires_grad = True
-        print(f"LoRA矩阵已激活，可训练参数为: A({self.lora_A.shape}), B({self.lora_B.shape})")
-
+	    def __init__(self, original_linear_layer, r=4, lora_alpha=8):
+	        super().__init__()
+	        核心：引用并冻结原始线性层
+	        self.original_linear = original_linear_layer
+	        
+		      冻结原始层的所有参数，不让它们参与训练
+	        for param in self.original_linear.parameters():
+	            param.requires_grad = False
+	
+	          开辟LoRA自己的小矩阵
+	        in_features = original_linear_layer.in_features
+	        out_features = original_linear_layer.out_features
+	
+	        self.lora_A = nn.Parameter(torch.zeros(r, in_features))    通常初始化为零
+	        self.lora_B = nn.Parameter(torch.zeros(out_features, r))     通常初始化为零
+	        self.scaling = lora_alpha / r    缩放因子，用于控制更新量的大小
+	
+	    def forward(self, x):
+	          主路径：使用原始线性层进行计算
+	        original_output = self.original_linear(x)
+	
+	          旁路路径：使用LoRA矩阵进行计算 (x -> A -> B)
+	        lora_output = (x @ self.lora_A.T @ self.lora_B.T) * self.scaling
+	
+	          将两条路径的结果合并
+	        return original_output + lora_output
+	
+	    def enable_lora(self):
+	        """激活LoRA矩阵的训练状态"""
+	        self.lora_A.requires_grad = True
+	        self.lora_B.requires_grad = True
+	        print(f"LoRA矩阵已激活，可训练参数为: A({self.lora_A.shape}), B({self.lora_B.shape})")
+	
 
 
 
