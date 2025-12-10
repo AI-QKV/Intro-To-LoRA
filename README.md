@@ -21,7 +21,6 @@
 ## 目录
 
 - [LoRA(一)LoRA的原理](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter1/chapter1.md)
-- 
 - [LoRA(二)LoRA的本质](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter2/chapter2.md)
 - 
 - [第3章](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3)
