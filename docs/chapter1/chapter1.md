@@ -1,6 +1,6 @@
 # LoRA深入浅出\(一\) LoRA的原理
 
-作者：殷韩（前快手高级工程师，前58高级工程师，现Datawhale社区成员）
+作者：小韩（前快手高级工程师，前58高级工程师，现Datawhale社区成员）
 
 ![](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter1/images/001.png)
 
