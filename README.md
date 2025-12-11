@@ -22,12 +22,7 @@
 
 - [LoRA(一)LoRA的原理](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter1/chapter1.md)
 - [LoRA(二)LoRA的本质](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter2/chapter2.md)
-- 
-- [第3章](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3)
-  - [3.1 我是3.1的标题](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3/chapter3_1)
-    - [3.1.1 我是3.1.1的标题](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3/chapter3_1/chapter3_1_1.md)
-    - [3.1.2 我是3.1.2的标题](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3/chapter3_1/chapter3_1_2.md)
-  - 3.2 我是3.2的标题
+- [LoRA(三)实战意图](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter3/chapter3.md)
 - 第4章
   - 4.1 我是4.1的标题
   - 4.2 我是4.2的标题
