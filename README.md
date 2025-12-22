@@ -24,7 +24,7 @@
 - [LoRA(二)LoRA的本质](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter2/chapter2.md)
 - [LoRA(三)实战意图](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter3/chapter3.md)
 - [LoRA(四)量化调优QLoRA](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter4/chapter4.md)
-
+- [LoRA(五)QLoRA的优中之优](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter5/chapter5.md)
 
 
 ## 贡献者名单
