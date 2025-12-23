@@ -10,17 +10,18 @@
 
  # 平台支持和配置信息
  
-     CUDA，这个是英伟达推出的并行计算平台，本质就是可以让开发者最大程度的利用GPU的数千个核心并行执行，从而显著提升应用程序的运行速度。
-        我们之前在讲QLoRA的时候，用的是BitsAndBytesConfig这个配置文件来进行的，这里我们来说明一下，BitsAndBytesConfig目前(2025年11月)支持最好的平台是英伟达的CUDA平台，BitsAndBytesConfig在这个平台也是最稳定，功能最全。所以市面上默认一般QLoRA都是跑在CUDA平台
+CUDA，这个是英伟达推出的并行计算平台，本质就是可以让开发者最大程度的利用GPU的数千个核心并行执行，从而显著提升应用程序的运行速度。
+ 
+我们之前在讲QLoRA的时候，用的是BitsAndBytesConfig这个配置文件来进行的，这里我们来说明一下，BitsAndBytesConfig目前(2025年11月)支持最好的平台是英伟达的CUDA平台，BitsAndBytesConfig在这个平台也是最稳定，功能最全。所以市面上默认一般QLoRA都是跑在CUDA平台
      
-     ROCm，这个是AMD的开源GPU计算生态系统‌，主要应用于人工智能、机器学习、科学计算及数据中心加速等领域。目前在这个平台配置BitsAndBytesConfig的时候，通常要用第三方的版本来运行QLoRA，(bitsandbytes-rocm），现阶段使用过程和主流平台有所差异，但随着时间发展行业的迭代并且加上AMD持续更新，相信也会达到使用方便的程度。
+ROCm，这个是AMD的开源GPU计算生态系统‌，主要应用于人工智能、机器学习、科学计算及数据中心加速等领域。目前在这个平台配置BitsAndBytesConfig的时候，通常要用第三方的版本来运行QLoRA，(bitsandbytes-rocm），现阶段使用过程和主流平台有所差异，但随着时间发展行业的迭代并且加上AMD持续更新，相信也会达到使用方便的程度。
+
+Apple Silicon (M1/M2/M3/等等)，这个是苹果公司推出的低功耗芯片，目前在移动平台性能优异，在台式机上表现也非常出色。
+由于BitsAndBytesConfig目前跑不了这种芯片，但是Apple也推出了替代方案，可以使用MLX来进行，比如使用mlx-lm库（同样支持4-bit量化的LoRA微调）。
+
+AutoGPTQ，这个不是平台，这个是基于GPTQ算法的开源模型量化工具包，将大语言模型（如BERT、OPT、LLaMA等）转换为低精度版本（如4位整数），以减少模型体积并提升推理速度。QLoRA默认使用NF4格式（动态解压），AutoGPTQ 使用 INT4 格式。对于非 CUDA 显卡（如 AMD），AutoGPTQ 的兼容性通常比 bitsandbytes好。
      
-     Apple Silicon (M1/M2/M3/等等)，这个是苹果公司推出的低功耗芯片，目前在移动平台性能优异，在台式机上表现也非常出色。
-        由于BitsAndBytesConfig目前跑不了这种芯片，但是Apple也推出了替代方案，可以使用MLX来进行，比如使用mlx-lm库（同样支持4-bit量化的LoRA微调）。
-     
-     AutoGPTQ，这个不是平台，这个是基于GPTQ算法的开源模型量化工具包，将大语言模型（如BERT、OPT、LLaMA等）转换为低精度版本（如4位整数），以减少模型体积并提升推理速度。QLoRA默认使用NF4格式（动态解压），AutoGPTQ 使用 INT4 格式。对于非 CUDA 显卡（如 AMD），AutoGPTQ 的兼容性通常比 bitsandbytes好。
-     
-     Unsloth，微调工具，这个是目前最强的微调工具，它的原理是，重新写了QLoRA的反向传播，导致性能有很大的提升，在速度方面比之前标准的QLoRA提升了2倍，但是目前只能在NVIDIA平台，对AMD的支持还在开发中。
+Unsloth，微调工具，这个是目前最强的微调工具，它的原理是，重新写了QLoRA的反向传播，导致性能有很大的提升，在速度方面比之前标准的QLoRA提升了2倍，但是目前只能在NVIDIA平台，对AMD的支持还在开发中。
      
  
 
