@@ -21,17 +21,17 @@
 ## 目录
 
 - [LoRA(一)LoRA的原理](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter1/chapter1.md)
-- 
+ 
 - [LoRA(二)LoRA的本质](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter2/chapter1.md)
-- 
+ 
 - [LoRA(三)实战意图](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter3/chapter1.md)
-- 
+ 
 - [LoRA(四)量化调优QLoRA](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter4/chapter1.md)
-- 
+ 
 - [LoRA(五)QLoRA的优中之优](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter5/chapter1.md)
-- 
+ 
 - [LoRA(六)QLoRA量化的支持](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter6/chapter1.md)
-- 
+ 
 - [LoRA(七)模型评估](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter7/chapter1.md)
 
 ## 贡献者名单
