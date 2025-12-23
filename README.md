@@ -26,7 +26,7 @@
 - [LoRA(四)量化调优QLoRA](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter4/chapter1.md)
 - [LoRA(五)QLoRA的优中之优](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter5/chapter1.md)
 - [LoRA(六)QLoRA量化的支持](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter6/chapter1.md)
-
+- [LoRA(七)模型评估](https://github.com/AI-QKV/Intro-To-LoRA/blob/main/docs/chapter7/chapter1.md)
 
 ## 贡献者名单
 
